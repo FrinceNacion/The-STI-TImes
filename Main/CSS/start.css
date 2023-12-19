@@ -1,0 +1,105 @@
+/* Stylesheet ng log-in page, fonts, variables, selections, body at iba pa */
+@import url("https://fonts.cdnfonts.com/css/rundeck");
+@import url(https://db.onlinewebfonts.com/c/6ca68131925d7aa08c97e57d9e8b2ed7?family=Cloister+Black);
+:root {
+  --bgColor: #edddc6ff;
+  --hoverText: #d7c9acff;
+  --solidBrown: #684735ff;
+  --fontColor: #1c1c1cd2;
+  --standardP: rgba(28, 28, 28, 0.959);
+  --border: #5b382cdc;
+  --altFont: "Maharlika";
+  --borderSize: 2px;
+}
+::selection {
+  color: var(--hoverText);
+  background-color: var(--fontColor);
+}
+h1 {
+  font-family: var(--altFont);
+  font-size: 2em !important;
+}
+p,
+a,
+label {
+  color: var(--fontColor);
+  font-family: var(--altFont);
+  font-size: medium;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/paper_fibers.png);
+}
+
+main {
+  display: flex !important;
+  height: 100%;
+  color: var(--fontColor);
+}
+
+main div {
+  width: 30%;
+}
+
+img {
+  width: 70%;
+  background-size: contain;
+  overflow: hidden;
+}
+
+#firstSlide {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-field,
+.active {
+  width: 100%;
+  color: var(--fontColor) !important;
+}
+#or {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #9e9e9e;
+}
+#loginBtn {
+  background-color: #9e9e9e !important;
+}
+#signUp {
+  background-color: var(--fontColor) !important;
+}
+
+@media only screen and (max-width: 760px) {
+  /* media queries, ginagamit ko para mag adapt yung design ng website natin sa 
+  cellphone screen size */
+  img {
+    width: 0;
+    display: none;
+  }
+
+  main div {
+    width: 100%;
+  }
+}
